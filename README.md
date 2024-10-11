@@ -2,7 +2,7 @@
 
 This is a Java-based project that provides a graphical user interface (GUI) for performing CRUD (Create, Read, Update, Delete) operations on Patient objects. The project uses Hibernate for Object-Relational Mapping (ORM) and MySQL for the database. It is built using Maven for dependency management.
 
-&emsp;&emsp;&emsp;&emsp; The image folder contains the screenshots for the project.
+&emsp;&emsp;[The image folder contains the screenshots for the project.](https://github.com/VenomousKnight/MedicalRecord/tree/master/Images)
 
 ## Features
  * Add a New Patient: Create a new patient and store their details in the database.
