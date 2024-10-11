@@ -399,7 +399,7 @@ public class AddPatientFrame extends JFrame {
 						//if not this will be added
 						patient.add(firstNameTextField.getText(), lastNameTextField.getText(), ssnTextField.getText(),java.sql.Date.valueOf(dobFormat.format(dobChooser.getDate())) ,phoneNumberTextField.getText(), address1TextField.getText(), address2TextField.getText(), cityTextField.getText(), zipCodeTextField.getText(), allergy1TextField.getText(), allergy2TextField.getText(), allergy3TextField.getText(),photoLabel.getText());
 					
-					JOptionPane.showMessageDialog(null, "ALL FILES HAVE BEEN RECORDED");//messages for successfully been entered
+					JOptionPane.showMessageDialog(null, "PATIENT INFORMATION BEEN RECORDED");//messages for successfully been entered
 					
 					/*exceptions for every type of error including documents that need to be required to input*/
 				}catch (IOException iOException) {
@@ -415,19 +415,19 @@ public class AddPatientFrame extends JFrame {
 					
 					//here if the required documents are not filled
 				}catch(NullPointerException nullPointerException) {
-					JOptionPane.showMessageDialog(contentPane, "Fill the files","Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(contentPane, "Fill the fields","Error", JOptionPane.ERROR_MESSAGE);
 					
 					//here if the required documents are not filled
 				} catch (RequiredFieldException requiredFieldException) {
-					JOptionPane.showMessageDialog(contentPane, "Fill the files","Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(contentPane, "Fill the fields","Error", JOptionPane.ERROR_MESSAGE);
 					
 					//here if the required documents are filled in the database.
 				} catch(ConstraintViolationException constraintViolationException) {
-					JOptionPane.showMessageDialog(contentPane, "The files can't be recorded.","Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(contentPane, "The information can't be recorded.","Error", JOptionPane.ERROR_MESSAGE);
 					
 					//here if the required documents are  filled in the database.
 				}catch(PersistenceException persistenceException) {
-					JOptionPane.showMessageDialog(contentPane, "The files can't be recorded.","Error", JOptionPane.ERROR_MESSAGE);
+					JOptionPane.showMessageDialog(contentPane, "The information can't be recorded.","Error", JOptionPane.ERROR_MESSAGE);
 				}
 			}
 		});
